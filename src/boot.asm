@@ -6,7 +6,7 @@ call print
 
 
 print:
-    mov bx, 0
+    xor bx, bx
 
 .main:
     lodsb                   ;Loading char
