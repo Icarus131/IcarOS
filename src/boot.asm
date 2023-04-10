@@ -26,7 +26,7 @@ print_string:
 
 jmp $                       ; Hanging the bootloader by jumping to the same point
 
-screen: db 'IcarOS', 0      ; Printing text to screen
+screen: db 'Welcome to IcarOS', 0      ; Printing text to screen
 
 
 times 510-($ - $$) db 0     ; Adding extra bytes as boot sig needs to be 512
