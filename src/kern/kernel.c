@@ -9,7 +9,7 @@ void write_string( int colour, const char *string )
 }
 
 
-extern "C" void main(){
+void main(){
     write_string(2, "IcarOS kernel reached!");
     return;
 }

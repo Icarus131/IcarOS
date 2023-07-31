@@ -9,7 +9,7 @@ bin/kernext.o: src/functions/extern.asm
 	nasm "src/functions/extern.asm" -f elf -o "bin/kernext.o"
 
 bin/kernel.o: src/kern/kernel.cpp
-	i386-elf-gcc -ffreestanding -m32 -g -c "src/kern/kernel.cpp" -o "bin/kernel.o"
+	i386-elf-gcc -ffreestanding -m32 -g -c "src/kern/kernel.c" -o "bin/kernel.o"
 
 bin/null.bin: src/utils/null.asm
 	nasm "src/utils/null.asm" -f bin -o "bin/null.bin"
