@@ -7,6 +7,7 @@
 ### To run, just execute the make file.
   - You will need to install certain dependencies to cross-compile. Installation script for Arch Linux can be found in `src/utils`
   - You can also do `./Makefile`
+  - You will need the full QEMU package on linux to run the bootloader
 
 - As of now, it can boot and jump to the kernel and execute from there
 
